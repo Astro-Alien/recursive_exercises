@@ -6,7 +6,21 @@ The Fibonacci sequence is a famous mathematical sequence of numbers that starts 
 
 - F(0) = 0
 - F(1) = 1
+- F(2) =  F(1) + F(0)
+  - = 1 + 0
+  - = 1
+-  F(3) = F(2) + F(1)
+  - = 1 + 1
+  - = 2
+- F(7) = F(7-1) + F(7-2)
+        = F(6) + F(5)
+        = 8 + 5 
+        = 13
+    - = F(6) = F(5) + F(4)
+    - = F(5) = F(4) + F(3)
+
 - F(n) = F(n-1) + F(n-2) for n > 1
+
 
 So, the Fibonacci sequence begins as follows:
 
