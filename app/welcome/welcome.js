@@ -6,4 +6,16 @@ export default class Welcome extends crs.classes.BindableElement {
     get shadowDom() {
         return true;
     }
+
+    connectedCallback() {
+        
+    }
+
+    createRecords(n) {
+        const records = [];
+
+        //create n number of records
+
+        return records
+    }
 }
