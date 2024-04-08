@@ -24,17 +24,16 @@
                 <use xlink:href="#menu"/>
             </svg>
         </button>
-
-        <h2>Application Template</h2>
     </header>
 
     <view-loader data-routes="app/routes.json">
         <aside classlist.if="$globals.isMenuOpen ? 'open'" click.setvalue="$globals.isMenuOpen = !$globals.isMenuOpen">
             <nav>
-                <h2>menu</h2>
+                <h2>Menu</h2>
                 <hr />
                 <ul>
                     <li><a href="/welcome">Welcome</a></li>
+                    <li><a href="/tic-tac-toe">Tic Tac Toe</a></li>
                     <li><a href="/about">About</a></li>
                 </ul>
             </nav>

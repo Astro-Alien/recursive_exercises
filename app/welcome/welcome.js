@@ -7,15 +7,10 @@ export default class Welcome extends crs.classes.BindableElement {
         return true;
     }
 
-    connectedCallback() {
-        
+    async connectedCallback() {
+       await super.connectedCallback();
+       this.shadowRoot.innerHTML = await fetch(this.html).then(result => result.text());
+       
     }
 
-    createRecords(n) {
-        const records = [];
-
-        //create n number of records
-
-        return records
-    }
 }

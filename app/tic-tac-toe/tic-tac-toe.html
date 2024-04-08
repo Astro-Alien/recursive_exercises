@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/app/tic-tac-toe/tic-tac-toe.css">
+
+<template id="squares">
+    <div class="point" data-position="1" aria-selected="false">${selectedSquare}</div>
+</template>
+
+<main id="board-container">
+    <header id="score-panel">
+        <h1 id="player-one" value.bind="playerOneScore">Player 1: ${playerOneScore}</h1>
+        <h1 id="player-two" value.bind="playerTwoScore">Player 2: ${playerTwoScore}</h1>
+    </header>
+    <div id="board" ref="board" data-player-move="player-1">
+        <!---use the inflation manager and templates to recreate this--->
+        <div class="square" data-position="0" aria-selected="false"></div>
+        <div class="square" data-position="1" aria-selected="false"></div>
+        <div class="square" data-position="2" aria-selected="false"></div>
+        <div class="square" data-position="3" aria-selected="false"></div>
+        <div class="square" data-position="4" aria-selected="false"></div>
+        <div class="square" data-position="5" aria-selected="false"></div>
+        <div class="square" data-position="6" aria-selected="false"></div>
+        <div class="square" data-position="7" aria-selected="false"></div>
+        <div class="square" data-position="8" aria-selected="false"></div>
+    </div>
+</main>

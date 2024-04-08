@@ -56,9 +56,7 @@ body {
     color: var(--cl-text);
 }
 
-header {
-    border-bottom: var(--border);
-}
+
 
 header h2 {
     margin: var(--padding) var(--padding);
@@ -85,6 +83,7 @@ aside {
 
 aside.open {
     translate: 0;
+    
 }
 
 aside.open:before {
@@ -135,9 +134,9 @@ nav hr {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: var(--border);
-    background: var(--cl-primary);
+    justify-content: left;
+    height: 2.5rem;
+    background: transparent;
     color: var(--cl-primary-contrast);
     padding: 0 var(--padding);
 }
@@ -180,7 +179,7 @@ view-loader, main {
 }
 
 view-loader {
-    background: var(--cl-window);
+    background: transparent;
 }
 
 main {
